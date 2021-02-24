@@ -3,6 +3,7 @@ import './card.css';
 import Header from './header/Header';
 import CategoryBar from './category_bar/CategoryBar';
 import Title from './title/Title';
+import Progress from './progress/Progress';
 
 export default function Card(props) {
   const colors = {
@@ -19,6 +20,7 @@ export default function Card(props) {
       <Header color={color}></Header>
       <Title className="title" title={props.Title}></Title>
       <CategoryBar label={props.Category} color={color} />
+      <Progress percent={props.Percent} />
     </div>
   );
 }

@@ -1,0 +1,10 @@
+.progress {
+  margin-top: 0;
+  height: 1em;
+  border-bottom: 1px solid #d7d7d7;
+  background-color: #ffffff;
+}
+.progress-lvl {
+  background-color: #e1e1e1;
+  height: 100%;
+}
