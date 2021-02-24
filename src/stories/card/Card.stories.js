@@ -13,5 +13,10 @@ const label = 'CategoryBar';
 const defaultValue = 'Title';
 
 export const CardSB = () => {
-  return <Card Category={text(label, defaultValue)} />;
+  return (
+    <Card
+      Category={text(label, defaultValue)}
+      Title={text('Title', 'Engineering Unlimited Pty Ltd')}
+    />
+  );
 };

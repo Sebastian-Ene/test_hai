@@ -2,6 +2,7 @@ import React from 'react';
 import './card.css';
 import Header from './header/Header';
 import CategoryBar from './category_bar/CategoryBar';
+import Title from './title/Title';
 
 export default function Card(props) {
   const colors = {
@@ -16,6 +17,7 @@ export default function Card(props) {
   return (
     <div className="card">
       <Header color={color}></Header>
+      <Title className="title" title={props.Title}></Title>
       <CategoryBar label={props.Category} color={color} />
     </div>
   );
