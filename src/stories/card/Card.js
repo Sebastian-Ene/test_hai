@@ -4,6 +4,7 @@ import Header from './header/Header';
 import CategoryBar from './category_bar/CategoryBar';
 import Title from './title/Title';
 import Progress from './progress/Progress';
+import Raise from './raise/Raise';
 
 export default function Card(props) {
   const colors = {
@@ -21,6 +22,7 @@ export default function Card(props) {
       <Title className="title" title={props.Title}></Title>
       <CategoryBar label={props.Category} color={color} />
       <Progress percent={props.Percent} />
+      <Raise raiseAmount={props.RaiseAmount} />
     </div>
   );
 }

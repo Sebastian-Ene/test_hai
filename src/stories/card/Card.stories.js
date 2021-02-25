@@ -23,6 +23,7 @@ export const CardSB = () => {
         max: 100,
         step: 1,
       })}
+      RaiseAmount={text('Raise Amount', '$100M AUD')}
     />
   );
 };
