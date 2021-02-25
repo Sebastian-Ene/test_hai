@@ -24,6 +24,9 @@ export const CardSB = () => {
         step: 1,
       })}
       RaiseAmount={text('Raise Amount', '$100M AUD')}
+      Sector={text('Sector', 'Seed Round')}
+      Industry={text('Industry', 'Industrials')}
+      Stage={text('Stage', 'Biotechnology')}
     />
   );
 };

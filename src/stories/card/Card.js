@@ -5,6 +5,7 @@ import CategoryBar from './category_bar/CategoryBar';
 import Title from './title/Title';
 import Progress from './progress/Progress';
 import Raise from './raise/Raise';
+import SectorIndustryStage from './sector_industry_stage/SectorIndustryStage';
 
 export default function Card(props) {
   const colors = {
@@ -23,6 +24,11 @@ export default function Card(props) {
       <CategoryBar label={props.Category} color={color} />
       <Progress percent={props.Percent} />
       <Raise raiseAmount={props.RaiseAmount} />
+      <SectorIndustryStage
+        sector={props.Sector}
+        industry={props.Industry}
+        stage={props.Stage}
+      />
     </div>
   );
 }
