@@ -6,6 +6,7 @@ import Title from './title/Title';
 import Progress from './progress/Progress';
 import Raise from './raise/Raise';
 import SectorIndustryStage from './sector_industry_stage/SectorIndustryStage';
+import BottomTags from './bottomTags/BottomTags';
 
 export default function Card(props) {
   const colors = {
@@ -22,12 +23,17 @@ export default function Card(props) {
       <Header color={color}></Header>
       <Title className="title" title={props.Title}></Title>
       <CategoryBar label={props.Category} color={color} />
-      <Progress percent={props.Percent} />
+      <Progress percent={props.Percent} raiseAmount={props.RaiseAmount} />
       <Raise raiseAmount={props.RaiseAmount} />
       <SectorIndustryStage
         sector={props.Sector}
         industry={props.Industry}
         stage={props.Stage}
+      />
+      <BottomTags
+        roomST={props.RoomST}
+        currency={props.Currency}
+        location={props.Location}
       />
     </div>
   );

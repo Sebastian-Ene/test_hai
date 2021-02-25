@@ -10,12 +10,10 @@ export default function SectorIndustryStage(props) {
         <FontAwesomeIcon className="fa" icon={faBars} /> {props.sector}
       </li>
       <li className="list-elem">
-        {' '}
         <FontAwesomeIcon className="fa" icon={faBox} />
         {props.industry}
       </li>
       <li className="list-elem">
-        {' '}
         <FontAwesomeIcon className="fa" icon={faBoxes} />
         {props.stage}
       </li>

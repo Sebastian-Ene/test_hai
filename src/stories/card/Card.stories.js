@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs, text, number } from '@storybook/addon-knobs';
+import { withKnobs, text, number, select } from '@storybook/addon-knobs';
 import Card from './Card';
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -27,6 +27,13 @@ export const CardSB = () => {
       Sector={text('Sector', 'Seed Round')}
       Industry={text('Industry', 'Industrials')}
       Stage={text('Stage', 'Biotechnology')}
+      Currency={text('Curency', 'Eur')}
+      RoomST={select(
+        'Room State',
+        { Open: 'Open', Closed: 'Closed', Finished: 'Finished' },
+        'Open'
+      )}
+      Location={text('Location', 'Australia')}
     />
   );
 };
