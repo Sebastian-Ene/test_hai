@@ -8,11 +8,11 @@ export default function Header(props) {
       <div className="bg-img-div">
         <img className="bg-img" src={pic} alt="img" />
       </div>
-      <img className="logo-img" src={pic} alt="img" />
       <div
         className="color-layer"
         style={{ backgroundColor: props.color }}
       ></div>
+      <img className="logo-img" src={pic} alt="img" />
     </div>
   );
 }
