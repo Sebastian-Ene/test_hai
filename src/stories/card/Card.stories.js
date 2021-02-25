@@ -34,6 +34,7 @@ export const CardSB = () => {
         'Open'
       )}
       Location={text('Location', 'Australia')}
+      BadgeText={text('Badge Text', 'New')}
     />
   );
 };

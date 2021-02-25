@@ -20,7 +20,7 @@ export default function Card(props) {
 
   return (
     <div className="card">
-      <Header color={color}></Header>
+      <Header badgeText={props.BadgeText} color={color}></Header>
       <Title className="title" title={props.Title}></Title>
       <CategoryBar label={props.Category} color={color} />
       <Progress percent={props.Percent} raiseAmount={props.RaiseAmount} />
